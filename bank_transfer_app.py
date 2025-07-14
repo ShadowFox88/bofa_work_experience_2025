@@ -26,7 +26,7 @@ def exit() -> None:
 def deposit(amnt: float) -> None:
     # TODO
     pass
-def send(accountId: str,amount: float) -> None:
+def send(accountId: str, amount: float) -> None:
     # TODO
     pass
 def balance() -> None:
