@@ -1,0 +1,11 @@
+[project]
+name = "bofa-work-experience-2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "psycopg[binary,pool]>=3.2.9",
+    "requests>=2.32.4",
+]

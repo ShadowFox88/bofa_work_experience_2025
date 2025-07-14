@@ -1,11 +1,11 @@
 services:
   db:
-    image: postgres
+    image: postgres:17-bullseye
     restart: unless-stopped
     environment:
       POSTGRES_USER: bofa
       POSTGRES_PASSWORD: bofa_wex_2025
     volumes:
-      ./pg_data:/var/lib/postgresql/data
+      - ./pg_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
