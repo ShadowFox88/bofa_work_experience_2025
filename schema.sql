@@ -5,4 +5,11 @@ CREATE TABLE IF NOT EXISTS users (
     currency char(3) NOT NULL
 );
 
--- logs
+CREATE TABLE IF NOT EXISTS transactions (
+    id text NOT NULL,
+    transaction_type text NOT NULL,
+    amount float NOT NULL,
+    currency char(3) NOT NULL,
+    recipient_id text,
+    timestamp TIMESTAMP NOT NULL DEFAULT NOW()
+);
